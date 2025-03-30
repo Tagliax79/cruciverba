@@ -1,3 +1,4 @@
+/* Stile generale */
 * {
     box-sizing: border-box;
     margin: 0;
@@ -26,6 +27,14 @@ h1 {
     color: #333;
 }
 
+h3 {
+    color: #4a90e2;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 5px;
+}
+
+/* Layout principale */
 .game-container {
     display: flex;
     flex-direction: column;
@@ -35,66 +44,74 @@ h1 {
 @media (min-width: 768px) {
     .game-container {
         flex-direction: row;
+        align-items: flex-start;
     }
 }
 
-.crossword-container {
+/* Stile cruciverba */
+.crossword-wrapper {
     flex: 1;
-    min-height: 400px;
-    display: grid;
-    grid-template-columns: repeat(10, 1fr);
-    grid-template-rows: repeat(10, 1fr);
-    gap: 1px;
-    background-color: #222;
-    padding: 2px;
-    border-radius: 5px;
 }
 
-.cell {
-    background-color: white;
+table {
+    border-collapse: collapse;
+    margin: 0 auto;
+}
+
+td {
+    width: 40px;
+    height: 40px;
+    border: 1px solid #333;
+    text-align: center;
     position: relative;
-    aspect-ratio: 1;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 1.2rem;
-    text-transform: uppercase;
-    cursor: pointer;
-    user-select: none;
+    background-color: white;
+    font-weight: bold;
 }
 
-.cell.black {
-    background-color: #222;
-}
-
-.cell.selected {
-    background-color: #d4edff;
-}
-
-.cell.highlighted {
-    background-color: #eaf5ff;
+td.black {
+    background-color: #333;
 }
 
 .cell-number {
     position: absolute;
     top: 2px;
     left: 2px;
-    font-size: 0.6rem;
+    font-size: 10px;
     color: #666;
 }
 
-.cell input {
+td input {
     width: 100%;
     height: 100%;
     border: none;
-    background: transparent;
+    font-size: 20px;
     text-align: center;
-    font-size: 1.2rem;
     text-transform: uppercase;
-    outline: none;
+    box-sizing: border-box;
+    padding: 0;
+    background-color: transparent;
+    cursor: pointer;
 }
 
-.clues-container {
+td input:focus {
+    outline: none;
+    background-color: #e6f2ff;
+}
+
+td.highlight {
+    background-color: #e6f2ff;
+}
+
+td.error-cell {
+    background-color: #ffebeb;
+}
+
+td.correct-cell {
+    background-color: #e6ffe6;
+}
+
+/* Stile definizioni */
+.clues-wrapper {
     flex: 1;
     display: flex;
     flex-direction: column;
@@ -105,23 +122,23 @@ h1 {
     border: 1px solid #ddd;
     border-radius: 5px;
     padding: 10px;
+    margin-bottom: 15px;
+    background-color: #f9f9f9;
+    max-height: 300px;
+    overflow-y: auto;
 }
 
-.clues h3 {
-    margin-bottom: 10px;
-    border-bottom: 1px solid #eee;
-    padding-bottom: 5px;
-}
-
-.clues ol {
-    padding-left: 20px;
+.clues ul {
+    list-style-type: none;
+    padding-left: 0;
 }
 
 .clues li {
-    margin-bottom: 5px;
+    margin-bottom: 8px;
     cursor: pointer;
-    padding: 3px;
+    padding: 5px;
     border-radius: 3px;
+    transition: background-color 0.2s;
 }
 
 .clues li:hover {
@@ -129,10 +146,13 @@ h1 {
 }
 
 .clues li.active {
-    background-color: #d4edff;
+    background-color: #e6f2ff;
     font-weight: bold;
+    border-left: 3px solid #4a90e2;
+    padding-left: 5px;
 }
 
+/* Controlli e messaggi */
 .controls {
     display: flex;
     justify-content: center;
@@ -147,33 +167,35 @@ button {
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    font-size: 1rem;
+    font-size: 16px;
     transition: background-color 0.2s;
 }
 
 button:hover {
-    background-color: #3a7bc8;
+    background-color: #357abD;
 }
 
-#message {
+.message {
     margin-top: 20px;
     text-align: center;
+    padding: 10px;
+    border-radius: 5px;
     font-weight: bold;
     min-height: 24px;
 }
 
-.correct {
-    color: green;
+.message.success {
+    background-color: #d4edda;
+    color: #155724;
 }
 
-.incorrect {
-    color: red;
+.message.error {
+    background-color: #f8d7da;
+    color: #721c24;
 }
 
-.error {
-    background-color: #ffdddd !important;
-}
-
-.success {
-    background-color: #ddffdd !important;
+.message.hint {
+    background-color: #e6f2ff;
+    color: #333;
+    border-left: 4px solid #4a90e2;
 }
