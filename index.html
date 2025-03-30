@@ -11,27 +11,184 @@
         <h1>Cruciverba Interattivo</h1>
         
         <div class="game-container">
-            <div class="crossword-container" id="crossword"></div>
+            <!-- Cruciverba -->
+            <div class="crossword-wrapper">
+                <table id="crossword">
+                    <tr>
+                        <td><span class="cell-number">1</span><input type="text" maxlength="1" data-row="0" data-col="0"></td>
+                        <td><span class="cell-number">2</span><input type="text" maxlength="1" data-row="0" data-col="1"></td>
+                        <td><span class="cell-number">3</span><input type="text" maxlength="1" data-row="0" data-col="2"></td>
+                        <td><span class="cell-number">4</span><input type="text" maxlength="1" data-row="0" data-col="3"></td>
+                        <td><span class="cell-number">5</span><input type="text" maxlength="1" data-row="0" data-col="4"></td>
+                        <td class="black"></td>
+                        <td><span class="cell-number">6</span><input type="text" maxlength="1" data-row="0" data-col="6"></td>
+                        <td><span class="cell-number">7</span><input type="text" maxlength="1" data-row="0" data-col="7"></td>
+                        <td><span class="cell-number">8</span><input type="text" maxlength="1" data-row="0" data-col="8"></td>
+                        <td><span class="cell-number">9</span><input type="text" maxlength="1" data-row="0" data-col="9"></td>
+                    </tr>
+                    <tr>
+                        <td><span class="cell-number">10</span><input type="text" maxlength="1" data-row="1" data-col="0"></td>
+                        <td><input type="text" maxlength="1" data-row="1" data-col="1"></td>
+                        <td><input type="text" maxlength="1" data-row="1" data-col="2"></td>
+                        <td><input type="text" maxlength="1" data-row="1" data-col="3"></td>
+                        <td><input type="text" maxlength="1" data-row="1" data-col="4"></td>
+                        <td><input type="text" maxlength="1" data-row="1" data-col="5"></td>
+                        <td><span class="cell-number">11</span><input type="text" maxlength="1" data-row="1" data-col="6"></td>
+                        <td><input type="text" maxlength="1" data-row="1" data-col="7"></td>
+                        <td><input type="text" maxlength="1" data-row="1" data-col="8"></td>
+                        <td><input type="text" maxlength="1" data-row="1" data-col="9"></td>
+                    </tr>
+                    <tr>
+                        <td><span class="cell-number">12</span><input type="text" maxlength="1" data-row="2" data-col="0"></td>
+                        <td><input type="text" maxlength="1" data-row="2" data-col="1"></td>
+                        <td><input type="text" maxlength="1" data-row="2" data-col="2"></td>
+                        <td><input type="text" maxlength="1" data-row="2" data-col="3"></td>
+                        <td><input type="text" maxlength="1" data-row="2" data-col="4"></td>
+                        <td class="black"></td>
+                        <td><input type="text" maxlength="1" data-row="2" data-col="6"></td>
+                        <td><input type="text" maxlength="1" data-row="2" data-col="7"></td>
+                        <td><input type="text" maxlength="1" data-row="2" data-col="8"></td>
+                        <td><input type="text" maxlength="1" data-row="2" data-col="9"></td>
+                    </tr>
+                    <tr>
+                        <td><span class="cell-number">13</span><input type="text" maxlength="1" data-row="3" data-col="0"></td>
+                        <td><input type="text" maxlength="1" data-row="3" data-col="1"></td>
+                        <td><input type="text" maxlength="1" data-row="3" data-col="2"></td>
+                        <td class="black"></td>
+                        <td><span class="cell-number">14</span><input type="text" maxlength="1" data-row="3" data-col="4"></td>
+                        <td><span class="cell-number">15</span><input type="text" maxlength="1" data-row="3" data-col="5"></td>
+                        <td><input type="text" maxlength="1" data-row="3" data-col="6"></td>
+                        <td><input type="text" maxlength="1" data-row="3" data-col="7"></td>
+                        <td><input type="text" maxlength="1" data-row="3" data-col="8"></td>
+                        <td><input type="text" maxlength="1" data-row="3" data-col="9"></td>
+                    </tr>
+                    <tr>
+                        <td class="black"></td>
+                        <td class="black"></td>
+                        <td><span class="cell-number">16</span><input type="text" maxlength="1" data-row="4" data-col="2"></td>
+                        <td><span class="cell-number">17</span><input type="text" maxlength="1" data-row="4" data-col="3"></td>
+                        <td><input type="text" maxlength="1" data-row="4" data-col="4"></td>
+                        <td><input type="text" maxlength="1" data-row="4" data-col="5"></td>
+                        <td><input type="text" maxlength="1" data-row="4" data-col="6"></td>
+                        <td class="black"></td>
+                        <td class="black"></td>
+                        <td class="black"></td>
+                    </tr>
+                    <tr>
+                        <td class="black"></td>
+                        <td class="black"></td>
+                        <td><input type="text" maxlength="1" data-row="5" data-col="2"></td>
+                        <td><input type="text" maxlength="1" data-row="5" data-col="3"></td>
+                        <td><input type="text" maxlength="1" data-row="5" data-col="4"></td>
+                        <td class="black"></td>
+                        <td><span class="cell-number">18</span><input type="text" maxlength="1" data-row="5" data-col="6"></td>
+                        <td><span class="cell-number">19</span><input type="text" maxlength="1" data-row="5" data-col="7"></td>
+                        <td><span class="cell-number">20</span><input type="text" maxlength="1" data-row="5" data-col="8"></td>
+                        <td><span class="cell-number">21</span><input type="text" maxlength="1" data-row="5" data-col="9"></td>
+                    </tr>
+                    <tr>
+                        <td><span class="cell-number">22</span><input type="text" maxlength="1" data-row="6" data-col="0"></td>
+                        <td><span class="cell-number">23</span><input type="text" maxlength="1" data-row="6" data-col="1"></td>
+                        <td><input type="text" maxlength="1" data-row="6" data-col="2"></td>
+                        <td><input type="text" maxlength="1" data-row="6" data-col="3"></td>
+                        <td class="black"></td>
+                        <td><span class="cell-number">24</span><input type="text" maxlength="1" data-row="6" data-col="5"></td>
+                        <td><input type="text" maxlength="1" data-row="6" data-col="6"></td>
+                        <td><input type="text" maxlength="1" data-row="6" data-col="7"></td>
+                        <td><input type="text" maxlength="1" data-row="6" data-col="8"></td>
+                        <td><input type="text" maxlength="1" data-row="6" data-col="9"></td>
+                    </tr>
+                    <tr>
+                        <td><span class="cell-number">25</span><input type="text" maxlength="1" data-row="7" data-col="0"></td>
+                        <td><input type="text" maxlength="1" data-row="7" data-col="1"></td>
+                        <td><input type="text" maxlength="1" data-row="7" data-col="2"></td>
+                        <td><input type="text" maxlength="1" data-row="7" data-col="3"></td>
+                        <td><span class="cell-number">26</span><input type="text" maxlength="1" data-row="7" data-col="4"></td>
+                        <td><input type="text" maxlength="1" data-row="7" data-col="5"></td>
+                        <td><input type="text" maxlength="1" data-row="7" data-col="6"></td>
+                        <td><input type="text" maxlength="1" data-row="7" data-col="7"></td>
+                        <td><input type="text" maxlength="1" data-row="7" data-col="8"></td>
+                        <td><input type="text" maxlength="1" data-row="7" data-col="9"></td>
+                    </tr>
+                    <tr>
+                        <td><span class="cell-number">27</span><input type="text" maxlength="1" data-row="8" data-col="0"></td>
+                        <td><input type="text" maxlength="1" data-row="8" data-col="1"></td>
+                        <td><input type="text" maxlength="1" data-row="8" data-col="2"></td>
+                        <td><input type="text" maxlength="1" data-row="8" data-col="3"></td>
+                        <td><input type="text" maxlength="1" data-row="8" data-col="4"></td>
+                        <td><input type="text" maxlength="1" data-row="8" data-col="5"></td>
+                        <td><input type="text" maxlength="1" data-row="8" data-col="6"></td>
+                        <td><input type="text" maxlength="1" data-row="8" data-col="7"></td>
+                        <td><input type="text" maxlength="1" data-row="8" data-col="8"></td>
+                        <td><input type="text" maxlength="1" data-row="8" data-col="9"></td>
+                    </tr>
+                    <tr>
+                        <td><span class="cell-number">28</span><input type="text" maxlength="1" data-row="9" data-col="0"></td>
+                        <td><input type="text" maxlength="1" data-row="9" data-col="1"></td>
+                        <td><input type="text" maxlength="1" data-row="9" data-col="2"></td>
+                        <td><input type="text" maxlength="1" data-row="9" data-col="3"></td>
+                        <td><input type="text" maxlength="1" data-row="9" data-col="4"></td>
+                        <td class="black"></td>
+                        <td><span class="cell-number">29</span><input type="text" maxlength="1" data-row="9" data-col="6"></td>
+                        <td><input type="text" maxlength="1" data-row="9" data-col="7"></td>
+                        <td><input type="text" maxlength="1" data-row="9" data-col="8"></td>
+                        <td><input type="text" maxlength="1" data-row="9" data-col="9"></td>
+                    </tr>
+                </table>
+            </div>
             
-            <div class="clues-container">
+            <!-- Definizioni -->
+            <div class="clues-wrapper">
                 <div class="clues">
                     <h3>Orizzontali</h3>
-                    <ol id="horizontal-clues"></ol>
+                    <ul id="across-clues">
+                        <li data-number="1" data-direction="across">1. La capitale d'Italia</li>
+                        <li data-number="6" data-direction="across">6. Piccolo strumento a fiato</li>
+                        <li data-number="10" data-direction="across">10. Animale che vola di notte</li>
+                        <li data-number="12" data-direction="across">12. La penisola con la Spagna</li>
+                        <li data-number="13" data-direction="across">13. Re di Troia, padre di Ettore</li>
+                        <li data-number="14" data-direction="across">14. Si battono per applaudire</li>
+                        <li data-number="16" data-direction="across">16. Tipico dolce di carnevale</li>
+                        <li data-number="18" data-direction="across">18. Può essere musicale o di sangue</li>
+                        <li data-number="22" data-direction="across">22. Il frutto della quercia</li>
+                        <li data-number="25" data-direction="across">25. Famosa città toscana con la torre pendente</li>
+                        <li data-number="27" data-direction="across">27. Il colore del cielo sereno</li>
+                        <li data-number="28" data-direction="across">28. Il continente più vasto</li>
+                        <li data-number="29" data-direction="across">29. Lo zaino dello scolaro</li>
+                    </ul>
                 </div>
                 <div class="clues">
                     <h3>Verticali</h3>
-                    <ol id="vertical-clues"></ol>
+                    <ul id="down-clues">
+                        <li data-number="1" data-direction="down">1. Calzatura estiva</li>
+                        <li data-number="2" data-direction="down">2. Può essere a vela o a motore</li>
+                        <li data-number="3" data-direction="down">3. Lo è il vino di ottima qualità</li>
+                        <li data-number="4" data-direction="down">4. Crostaceo con chele</li>
+                        <li data-number="5" data-direction="down">5. Recipiente per fiori</li>
+                        <li data-number="7" data-direction="down">7. La città con il Vesuvio</li>
+                        <li data-number="8" data-direction="down">8. La città con il Colosseo</li>
+                        <li data-number="9" data-direction="down">9. Frutto giallo tropicale</li>
+                        <li data-number="11" data-direction="down">11. Sostanza che dà energia</li>
+                        <li data-number="15" data-direction="down">15. Il contrario di giorno</li>
+                        <li data-number="17" data-direction="down">17. Il contrario di entrare</li>
+                        <li data-number="19" data-direction="down">19. Strumento per misurare la febbre</li>
+                        <li data-number="20" data-direction="down">20. Fiore simbolo dell'Olanda</li>
+                        <li data-number="21" data-direction="down">21. La bevanda del mattino</li>
+                        <li data-number="23" data-direction="down">23. Uccello che miagola</li>
+                        <li data-number="24" data-direction="down">24. La città con la Torre Eiffel</li>
+                        <li data-number="26" data-direction="down">26. Una nota musicale</li>
+                    </ul>
                 </div>
             </div>
         </div>
         
         <div class="controls">
-            <button id="check-btn">Verifica</button>
-            <button id="reveal-btn">Rivela soluzione</button>
-            <button id="reset-btn">Ricomincia</button>
+            <button id="check">Verifica</button>
+            <button id="reveal">Rivela soluzione</button>
+            <button id="reset">Ricomincia</button>
         </div>
         
-        <div id="message"></div>
+        <div id="message" class="message"></div>
     </div>
     
     <script src="script.js"></script>
