@@ -6,9 +6,9 @@ Un'applicazione web semplice per giocare a cruciverba interattivi.
 
 - Griglia interattiva con input per le lettere
 - Definizioni divise tra orizzontali e verticali
-- Possibilità di navigare con la tastiera (frecce direzionali)
-- Funzioni per verificare la soluzione, rivelare la soluzione e ricominciare
+- Navigazione con tastiera (frecce direzionali)
 - Layout responsive per dispositivi mobili e desktop
+- Funzioni per verificare la soluzione, rivelare la soluzione completa e ricominciare
 
 ## Come giocare
 
@@ -19,6 +19,14 @@ Un'applicazione web semplice per giocare a cruciverba interattivi.
 5. Clicca su "Verifica" per controllare la tua soluzione
 6. Clicca su "Rivela soluzione" per vedere la soluzione completa
 7. Clicca su "Ricomincia" per azzerare il cruciverba
+
+## Miglioramenti tecnici
+
+L'applicazione è stata aggiornata con una struttura HTML più robusta:
+- Utilizzo di tabelle HTML standard per la griglia del cruciverba
+- Miglior posizionamento delle lettere nelle celle
+- Compatibilità migliorata con diversi browser
+- Evidenziazione chiara delle definizioni corrispondenti
 
 ## Tecnologie utilizzate
 
@@ -33,7 +41,7 @@ Un'applicazione web semplice per giocare a cruciverba interattivi.
 
 ## Personalizzazione
 
-Per modificare il cruciverba, puoi editare l'oggetto `crosswordData` nel file `script.js`. Modifica la griglia e le definizioni secondo le tue preferenze.
+Per modificare il cruciverba, puoi editare l'oggetto `crosswordData` nel file `script.js`, modificando griglia e definizioni secondo le tue preferenze.
 
 ## Licenza
 
