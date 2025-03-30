@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cruciverba Interattivo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Cruciverba Interattivo</h1>
+        
+        <div class="game-container">
+            <div class="crossword-container" id="crossword"></div>
+            
+            <div class="clues-container">
+                <div class="clues">
+                    <h3>Orizzontali</h3>
+                    <ol id="horizontal-clues"></ol>
+                </div>
+                <div class="clues">
+                    <h3>Verticali</h3>
+                    <ol id="vertical-clues"></ol>
+                </div>
+            </div>
+        </div>
+        
+        <div class="controls">
+            <button id="check-btn">Verifica</button>
+            <button id="reveal-btn">Rivela soluzione</button>
+            <button id="reset-btn">Ricomincia</button>
+        </div>
+        
+        <div id="message"></div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
